@@ -6,7 +6,7 @@ import Cta from './cta';
 export default function Card(params:any) {
 	return (
 		<div 
-			className={`basis-[32%] inline-block mb-[20px] mx-0 min-h-[184px]
+			className={`text-white basis-[32%] inline-block mb-[20px] mx-0 min-h-[184px]
 			flex flex-col p-4 bg-slate-800 border border-slate-900 h-full opacity-90 hover:opacity-100
 			transition-shadow duration-500 hover:shadow-2xl hover:shadow-amber-500`}
 		>
@@ -23,6 +23,7 @@ export default function Card(params:any) {
 			<div>
 				<Link href={params.href} target='_blank'><h2 className="mt-0 mb-3">{params.title}</h2></Link>
 				<Link href={params.href} target='_blank'><p className="mb-4 grow">{params.description}</p></Link>
+				<div className="mb-4">Category: {params.category}</div>
 				<Cta ctaText={params.ctaText} href={params.href} />
 			</div>
 		</div>
