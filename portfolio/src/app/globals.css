@@ -2,26 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer base {
+  main {
+    h1 {
+      @apply text-xl md:text-2xl font-bold mb-4 text-center mb-5 mt-4;
+    }
+    h2 {
+      @apply text-lg md:text-xl font-bold text-purple-light mb-3 mt-9;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+      a {
+        @apply text-white no-underline;
+      }
+    }
+    .tiles a,
+    .tiles h2 {
+      @apply text-white no-underline;
+    }
+    h3 {
+      @apply text-base md:text-lg font-bold mb-2 mt-7;
+    }
+    a {
+      @apply underline text-blue-light;
+    }
+    p {
+      @apply mb-3;
+    }
+    ul {
+      @apply list-disc ml-4;
+    }
+    .post img {
+      @apply mb-10;
+    }
+    .post h2, .post h3 {
+      @apply text-black;
+    }
+    .post-card h2, .post-card h3 {
+      @apply text-white;
+    }
   }
 }
