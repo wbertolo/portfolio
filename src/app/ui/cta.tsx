@@ -9,7 +9,7 @@ export default function Cta(params:any) {
 			className={`inline-block py-3 px-4 uppercase font-bold border bg-slate-900 
 				text-white no-underline hover:bg-white hover:text-black hover:border-black`}
 		>
-			Learn More
+			Visit
 		</Link>
 	)
 }
