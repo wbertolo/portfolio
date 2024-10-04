@@ -109,12 +109,13 @@ const cards = [
 
 
 
-export default function Cards(params:any) {
+export default function Cards() {
 	return (
 		<div className="tiles flex flex-col lg:flex-row justify-between flex-wrap">
 			{cards.map((card) => (
 					<Card
-						title={card.title}
+						key={card.id}
+						title={card.name}
 						description={card.description}
 						category={card.category}
 						imgSrc={`/images/${card.image}`}
