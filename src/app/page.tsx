@@ -1,13 +1,10 @@
-import styles from '@/app/ui/home.module.css';
-import Image from 'next/image';
 import Card from './ui/card';
-import invoices from './lib/placeholder-data.ts';
 
 export default function Home() {
 	return (
 		<div>
-			<main className="">
-			<h1>William Bertolo's Portfolio</h1>
+			<main>
+			<h1>William Bertolo&apos;s Portfolio</h1>
 			<p className="text-center mb-5">Built with NextJS and TailWind CSS</p>
 				<div className="tiles flex flex-col lg:flex-row justify-between flex-wrap">
 					<Card
