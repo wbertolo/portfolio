@@ -8,7 +8,7 @@ export default function Home() {
 		<div>
 			<main className="">
 			<h1>William Bertolo's Portfolio</h1>
-			<p className="text-center mb-5">Built with NextJS</p>
+			<p className="text-center mb-5">Built with NextJS and TailWind CSS</p>
 				<div className="tiles flex flex-col lg:flex-row justify-between flex-wrap">
 					<Card
 						title="Follow This Light"
