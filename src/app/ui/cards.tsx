@@ -7,31 +7,30 @@ import CatSelector from './catselector';
 
 
 export default function Cards({ cards }: { cards:Array<Object> }) {
-
 	const [cardCollection, setCardCollection] = useState(cards);
 	const [category, setCategory] = useState('All');
-
-	function handleCategoryChange(newCategory:string) {
-		if (newCategory != 'All') {
-			setCategory(newCategory);
-			const filteredCardCollection = cardCollection.filter(card => card.category === category);
-			console.log(filteredCardCollection);
-			// updateCards(category, filteredCardCollection)
-		}
-	}
+	let filteredCardCollection:Object[] = [];
 	
-	function updateCards(category:string, filteredCardCollection:Object[]) {
-		setCardCollection(filteredCardCollection);
-	}
-	// useEffect(() => {
-	// 	setCardCollection(cardCollection.filter(card => card.category === category));
-	// });
-
-
+	useEffect(() => {
+		if (category != 'All') {
+			console.log('hrere');
+			console.log(cardCollection);
+			cardCollection.map((card:Object) => {
+				console.log('card.category=' + card.category);
+				console.log('category=' + category);
+				if (card.category === category) {
+					console.log(card);
+					filteredCardCollection.push(card);
+				}
+			});
+			console.log(filteredCardCollection);
+			setCardCollection(filteredCardCollection);
+		}
+      },[category]);
 
 	return (
 		<div>
-			<CatSelector handleCategoryChange={handleCategoryChange} />
+			<CatSelector setCategory={setCategory} />
 			<div className="tiles flex flex-col lg:flex-row justify-between flex-wrap">
 				{cardCollection.map((card:any) => (
 						<Card
