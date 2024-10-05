@@ -16,7 +16,7 @@ export default function Card(params:any) {
 					src={params.imgSrc}
 					width={640}
 					height={360}
-					alt={params.imgAlt}
+					alt={`${params.title} website image`}
 				/>
 			</div>
 			</Link>

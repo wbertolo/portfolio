@@ -1,6 +1,8 @@
-export type Site = {
+export type CardDef = {
   id: number;
   name: string;
-  year: number;
-  status: 'live' | 'down';
+  description: string;
+  category: string;
+  image: string;
+  url: string;
 };
