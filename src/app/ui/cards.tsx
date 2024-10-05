@@ -1,6 +1,7 @@
 'use client';
 import Card from './card';
 import { useState } from 'react';
+import { useEffect } from "react";
 import CatSelector from './catselector';
 // import { CardDef } from './../lib/definitions';
 
@@ -8,14 +9,25 @@ import CatSelector from './catselector';
 export default function Cards({ cards }: { cards:Array<Object> }) {
 
 	const [cardCollection, setCardCollection] = useState(cards);
-	const [category, setCategory] = useState('all');
+	const [category, setCategory] = useState('All');
 
 	function handleCategoryChange(newCategory:string) {
-		setCategory(newCategory);
-		console.log(newCategory);
-	 }
+		if (newCategory != 'All') {
+			setCategory(newCategory);
+			const filteredCardCollection = cardCollection.filter(card => card.category === category);
+			console.log(filteredCardCollection);
+			// updateCards(category, filteredCardCollection)
+		}
+	}
+	
+	function updateCards(category:string, filteredCardCollection:Object[]) {
+		setCardCollection(filteredCardCollection);
+	}
+	// useEffect(() => {
+	// 	setCardCollection(cardCollection.filter(card => card.category === category));
+	// });
 
-	// console.log(cardCollection);
+
 
 	return (
 		<div>
