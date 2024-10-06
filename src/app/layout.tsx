@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-300`} >
+			<body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-300 transition-all duration-100`} >
 				<div className="max-w-[960px] mx-auto text-left min-h-screen pb-[100px]">
 					<Header />
 					<TopNav />
