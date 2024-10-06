@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import Cta from './cta';
 
 
 export default function Card(params:any) {
