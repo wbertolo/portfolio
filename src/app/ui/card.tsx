@@ -17,7 +17,7 @@ export default function Card(params:any) {
 					alt={`${params.title} website image`}
 				/>
 				<div>
-					<h2 className="mt-0 mb-3">{params.title}</h2>
+					<h2 className="mt-0 mb-3 text-white">{params.title}</h2>
 					<p className="mb-4 grow">{params.description}</p>
 					<div className="mb-4">Category: {params.category}</div>
 					<div 
