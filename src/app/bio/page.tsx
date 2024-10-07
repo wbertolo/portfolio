@@ -69,7 +69,7 @@ export default function Home() {
 				
 				<h2>EMPLOYMENT HISTORY</h2>
 				
-				<div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr grid-flow-row">
+				<div className="grid gap-5 grid-cols-1 auto-rows-auto grid-flow-row">
 					{history.map((card:any) => (
 							<ResumeCard
 								key={card.id}
