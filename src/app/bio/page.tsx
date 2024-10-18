@@ -10,25 +10,46 @@ const history = [
 		description: "",
 	},
 	{
-		id: 1,
+		id: 2,
 		company: "Corus Entertainment",
 		period: "October 2014 - November 2019",
 		role: "Full Stack Web Developer",
 		description: "",
 	},
 	{
-		id: 1,
+		id: 3,
 		company: "Critical Mass",
 		period: "June 2014 - September 2014",
 		role: "Web Developer",
 		description: "",
 	},
 	{
-		id: 1,
+		id: 4,
+		company: "H2 Central",
+		period: "May 2013 - May 2014",
+		role: "Web Developer",
+		description: "",
+	},
+	{
+		id: 5,
+		company: "ecobee inc",
+		period: "Oct 2011 - Feb 2013",
+		role: "Web Developer",
+		description: "",
+	},
+	{
+		id: 6,
+		company: "Scott Thornley + Company",
+		period: "Apr 2010 - Oct 2011",
+		role: "Technical Director",
+		description: "",
+	},
+	{
+		id: 7,
 		company: "PRIOR ROLES",
 		period: "",
 		role: "",
-		description: "Web Developer, H2 Central   →   Web Developer, Ecobee Inc.   →   Technical Director, Scott Thornley + Company   →   Web Developer, Critical Mass   →   Web Developer / Team Lead / Project Manager / Business Analyst, Vivo Mobile Telecom and TCO Mobile Telecom   →   Communications Specialist, CNPq",
+		description: "Web Developer, Critical Mass   →   Web Developer / Team Lead / Project Manager / Business Analyst, Vivo Mobile Telecom and TCO Mobile Telecom   →   Communications Specialist, CNPq",
 	},
 ]
 export default function Home() {
@@ -47,8 +68,9 @@ export default function Home() {
 				</div>
 				<h3>DEVELOPMENT SKILLS:</h3>
 				<ul>
-					<li>WordPress architecture, themes and plugin development, PHP, NextJS, Gatsby, MySQL, ACF, WPML, Drupal, React, (X)HTML5, ES6, Ajax, JSON, XML, RESTful APIs, jQuery, JS unit tests, A/B testing tools</li>
-					<li>CSS3, TailWind CSS, SASS, LESS, Bootstrap, media queries</li>
+					<li>WordPress architecture, themes and plugin development, PHP, MySQL, ACF, WPML, Drupal</li>
+					<li>Headless CMS using NextJS and Gatsby, React, Vercel, PostgreSQL, (X)HTML5, ES6, Ajax, JSON, XML, RESTful APIs, JS unit tests, A/B testing tools</li>
+					<li>CSS3, TailWind CSS, SASS, Bootstrap, LESS, mobile-first, media queries</li>
 					<li>Mobile-first, Figma, accessibility, SEO, PSI optimization, Lighthouse, Analytics, Google Tag Manager, Google Ads, Adobe Suite, GitHub, Docker, NPM, Gulp, Grunt, SVN, browser inspectors</li>
 					<li>Developed/maintained complex JS applications (financial calculators, games and home automation widgets), complex PHP applications for large-scale national audiences, several public-facing, high-visibility, mission-critical applications/sites for large-scale companies, and front-end code in .Net, C#, classic ASP and Java environments</li>
 					<li>Personal musician website implemented with WordPress and TailWind CSS: <Link href="https://followthislight.com" target="_blank">https://followthislight.com</Link>. (NextJS version at <Link href="https://this-light-next.netlify.app" target="_blank">https://this-light-next.netlify.app</Link>/)</li>
