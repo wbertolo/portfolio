@@ -68,8 +68,8 @@ export default function Home() {
 				</div>
 				<h3>DEVELOPMENT SKILLS:</h3>
 				<ul>
-					<li>WordPress architecture, themes and plugin development, PHP, MySQL, ACF, WPML, Drupal</li>
-					<li>Headless CMS using NextJS and Gatsby, React, Vercel, PostgreSQL, Netlify, (X)HTML5, ES6, Ajax, JSON, XML, RESTful APIs, JS unit tests, A/B testing tools</li>
+					<li>JavaScript, TypeScript, NextJS, React, Gatsby, Vercel, PostgreSQL, Netlify, (X)HTML5, JSON, XML, RESTful APIs, JS unit tests, A/B testing tools</li>
+					<li>WordPress theme and plugin development, PHP, MySQL, ACF, WPML, Drupal</li>
 					<li>CSS3, TailWind CSS, SASS, Bootstrap, LESS, mobile-first, media queries</li>
 					<li>Mobile-first, Figma, accessibility, SEO, PSI optimization, Lighthouse, Analytics, Google Tag Manager, Google Ads, Adobe Suite, GitHub, Docker, NPM, Gulp, Grunt, SVN, browser inspectors</li>
 					<li>Developed/maintained complex JS applications (financial calculators, games and home automation widgets), complex PHP applications for large-scale national audiences, several public-facing, high-visibility, mission-critical applications/sites for large-scale companies, and front-end code in .Net, C#, classic ASP and Java environments</li>
