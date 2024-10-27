@@ -7,42 +7,42 @@ const history = [
 		company: "Freshbooks",
 		period: "November 2019 - October 2024",
 		role: "Full Stack Web Developer, Team Lead",
-		description: "",
+		technologies: "WordPress, NextJS, PHP, HTML, JavaScript, Gatsby, React, GraphQL, React, CSS, Tailwind CSS, Docker",
 	},
 	{
 		id: 2,
 		company: "Corus Entertainment",
 		period: "October 2014 - November 2019",
 		role: "Full Stack Web Developer",
-		description: "",
+		technologies: "WordPress, PHP, ACF, Gravity Forms, ES6, HTML5, CSS3, WPML, jQuery, SASS, GIT, Docker, Gulp, Omniture, ComScore, Krux, Ads, Drupal.",
 	},
 	{
 		id: 3,
 		company: "Critical Mass",
 		period: "June 2014 - September 2014",
 		role: "Web Developer",
-		description: "",
+		technologies: "HTML5, CSS, JavaScript",
 	},
 	{
 		id: 4,
 		company: "H2 Central",
 		period: "May 2013 - May 2014",
 		role: "Web Developer",
-		description: "",
+		technologies: "WordPress, PHP, Advanced Custom Fields (ACF), Gravity Forms, JavaScript, HTML5, CSS3, jQuery",
 	},
 	{
 		id: 5,
 		company: "ecobee inc",
 		period: "Oct 2011 - Feb 2013",
 		role: "Web Developer",
-		description: "",
+		technologies: "WordPress, PHP, Java, JavaScript, HTML5, CSS3, jQuery",
 	},
 	{
 		id: 6,
 		company: "Scott Thornley + Company",
 		period: "Apr 2010 - Oct 2011",
 		role: "Technical Director",
-		description: "",
+		technologies: "WordPress, PHP, JavaScript, HTML5, CSS3, jQuery",
 	},
 	{
 		id: 7,
@@ -50,6 +50,7 @@ const history = [
 		period: "",
 		role: "",
 		description: "Web Developer, Critical Mass   →   Web Developer / Team Lead / Project Manager / Business Analyst, Vivo Mobile Telecom and TCO Mobile Telecom   →   Communications Specialist, CNPq",
+		technologies: "HTML, ASP, JavaScript, HTML, CSS, jQuery"
 	},
 ]
 export default function Home() {
@@ -68,7 +69,7 @@ export default function Home() {
 				</div>
 				<h3>DEVELOPMENT SKILLS:</h3>
 				<ul>
-					<li>JavaScript, TypeScript, NextJS, React, Gatsby, Vercel, PostgreSQL, Netlify, (X)HTML5, JSON, XML, RESTful APIs, JS unit tests, A/B testing tools</li>
+					<li>JavaScript, TypeScript, NextJS, React, Gatsby, Vercel, PostgreSQL, SendGrid, Netlify, NodeJS, (X)HTML5, JSON, XML, RESTful APIs, JS unit tests, A/B testing tools</li>
 					<li>WordPress theme and plugin development, PHP, MySQL, ACF, WPML, Drupal</li>
 					<li>CSS3, TailWind CSS, SASS, Bootstrap, LESS, mobile-first, media queries</li>
 					<li>Mobile-first, Figma, accessibility, SEO, PSI optimization, Lighthouse, Analytics, Google Tag Manager, Google Ads, Adobe Suite, GitHub, Docker, NPM, Gulp, Grunt, SVN, browser inspectors</li>
@@ -97,6 +98,7 @@ export default function Home() {
 								company={card.company}
 								period={card.period}
 								role={card.role}
+								technologies={card.technologies}
 								description={card.description}
 							/>		
 					))}

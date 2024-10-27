@@ -9,6 +9,7 @@ export default function ResumeCard(params:any) {
 				<h2 className="mt-0 mb-3 text-white">{params.company}</h2>
 				<p className="mb-4 grow">{params.period}</p>
 				<div className="mb-4">{params.role}</div>
+				<div className="mb-4">Tecnologies: {params.technologies}</div>
 				<div>{params.description}</div>
 			</div>
 		</div>
