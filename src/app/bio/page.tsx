@@ -98,8 +98,8 @@ export default function Home() {
 								company={card.company}
 								period={card.period}
 								role={card.role}
-								technologies={card.technologies}
 								description={card.description}
+								technologies={card.technologies}
 							/>		
 					))}
 				</div>
