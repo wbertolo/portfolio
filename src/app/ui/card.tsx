@@ -1,11 +1,19 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useCardContext } from '../context/CardContext';
 
 export default function Card(params:any) {
 
+	const { setSelectedCard, setModalStatus } = useCardContext();
+
 	const handleClick = () => {
-		params.handleSelectedCard(params.id);
-		params.setModalStatus(true);
+		setSelectedCard(params.id);
+		setModalStatus(true);
+
+		document.getElementById('overlay-shadow')?.classList.remove('hidden');
+		document.getElementById('overlay-shadow')?.classList.add('fixed');
+		document.body.classList.add('overlay-shadow-colour');
+
 	}
 	return (
 		// <Link href={params.href} target="_blank" className="no-underline">
@@ -23,7 +31,6 @@ export default function Card(params:any) {
 				/>
 				<div>
 					<h2 className="mt-0 mb-3 text-white">{params.name}</h2>
-					<p className="mb-4 grow">{params.description}</p>
 					<div className="mb-4">Category: {params.category}</div>
 					<div 
 						className={`inline-block py-3 px-4 uppercase font-bold border bg-slate-900 
