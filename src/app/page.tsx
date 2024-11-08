@@ -1,4 +1,4 @@
-import Cards from './ui/cards';
+import Cards from './ui/Cards';
 
 
 const cards = [

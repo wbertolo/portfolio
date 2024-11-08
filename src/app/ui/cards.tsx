@@ -1,8 +1,8 @@
 'use client';
-import Card from './card';
+import Card from './Card';
 import { useState } from 'react';
 import { useEffect } from "react";
-import CatSelector from './catselector';
+import CatSelector from './CatSelector';
 
 
 export default function Cards({ cards }: { cards:Array<object> }) {
@@ -27,7 +27,7 @@ export default function Cards({ cards }: { cards:Array<object> }) {
 	return (
 		<div>
 			<CatSelector setCategory={setCategory} />
-			<div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr grid-flow-row">
+			<div className="cards grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr grid-flow-row">
 				{filteredCardCollection.map((card:any) => (
 						<Card
 							key={card.id}

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ResumeCard from "../ui/resumecard";
+import ResumeCard from "../ui/ResumeCard";
 
 const history = [
 	{

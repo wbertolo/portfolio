@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "./ui/header";
-import TopNav from "./ui/topnav";
-import Footer from "./ui/footer";
+import Header from "./ui/Header";
+import TopNav from "./ui/TopNav";
+import Footer from "./ui/Footer";
+import CardOverlay from './ui/CardOverlay';
 
 const geistSans = localFont({
 	src: "./fonts/GeistVF.woff",
@@ -37,6 +38,7 @@ export default function RootLayout({
 					</main>
 				</div>
 				<Footer />
+				<CardOverlay />
 			</body>
 		</html>
 	);
