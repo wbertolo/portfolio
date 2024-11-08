@@ -4,7 +4,8 @@ import "./globals.css";
 import Header from "./ui/Header";
 import TopNav from "./ui/TopNav";
 import Footer from "./ui/Footer";
-import CardOverlay from './ui/CardOverlay';
+// import CardOverlay from './ui/CardOverlay';
+// import { useState } from "react";
 
 const geistSans = localFont({
 	src: "./fonts/GeistVF.woff",
@@ -27,6 +28,9 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
+
+	// const [selectedCard, setSelectedCard] = useState();
+
 	return (
 		<html lang="en">
 			<body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-300 transition-all duration-100`} >
@@ -38,7 +42,6 @@ export default function RootLayout({
 					</main>
 				</div>
 				<Footer />
-				<CardOverlay />
 			</body>
 		</html>
 	);

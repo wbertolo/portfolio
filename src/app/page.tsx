@@ -1,3 +1,5 @@
+'use client';
+
 import Cards from './ui/Cards';
 
 
@@ -110,6 +112,7 @@ const cards = [
 
 
 export default function Home() {
+
 	return (
 		<div>
 			<main>

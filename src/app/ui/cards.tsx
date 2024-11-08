@@ -3,12 +3,27 @@ import Card from './Card';
 import { useState } from 'react';
 import { useEffect } from "react";
 import CatSelector from './CatSelector';
+import CardOverlay from './CardOverlay';
+import { Card as CardDef } from '../lib/definitions';
 
-
-export default function Cards({ cards }: { cards:Array<object> }) {
+export default function Cards({ cards }: { cards:Array<CardDef> }) {
 	const cardCollection = cards;
 	const [filteredCardCollection, setFilteredCardCollection] = useState(cards);
 	const [category, setCategory] = useState('All');
+	const [selectedCard, setSelectedCard] = useState({});
+	const [modalStatus, setModalStatus ] = useState(false);
+
+	useEffect(() => {
+		console.log(modalStatus)
+	},[modalStatus])
+
+
+	const handleSelectedCard = (id:number) => {
+		const targetCard = cardCollection.filter(card => card.id === id)[0];
+		setSelectedCard(targetCard);
+
+	}
+
 
 	useEffect(() => {
 		const filteredCards:object[] = [];
@@ -31,14 +46,22 @@ export default function Cards({ cards }: { cards:Array<object> }) {
 				{filteredCardCollection.map((card:any) => (
 						<Card
 							key={card.id}
-							title={card.name}
+							id={card.id}
+							name={card.name}
 							description={card.description}
 							category={card.category}
 							imgSrc={`/images/${card.image}`}
 							href={card.url}
+							handleSelectedCard={handleSelectedCard}
+							setModalStatus={setModalStatus}
 						/>		
 				))}
 			</div>
+			<CardOverlay
+				modalStatus={modalStatus}
+				setModalStatus={setModalStatus}
+				selectedCard={selectedCard}
+			/>
 		</div>
 	)
 }
