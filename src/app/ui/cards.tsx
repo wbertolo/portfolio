@@ -3,7 +3,6 @@ import Card from './card';
 import { useState } from 'react';
 import { useEffect } from "react";
 import CatSelector from './catselector';
-// import { CardDef } from './../lib/definitions';
 
 
 export default function Cards({ cards }: { cards:Array<object> }) {
