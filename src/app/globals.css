@@ -25,5 +25,4 @@
 	ul {
 		@apply list-disc ml-4;
 	}
-	/* .overlay-shadow-colour {box-shadow: inset 100000px 100000px 100000px 100000px rgba(0, 0, 0, 0.7)} */
 }

@@ -4,8 +4,8 @@ import "./globals.css";
 import Header from "./ui/Header";
 import TopNav from "./ui/TopNav";
 import Footer from "./ui/Footer";
-import { CardContextProvider } from "@/app/context/CardContext";
 import CardOverlay from '@/app/ui/CardOverlay';
+import { CardContextProvider } from "@/app/context/CardContext";
 
 const geistSans = localFont({
 	src: "./fonts/GeistVF.woff",
@@ -36,12 +36,9 @@ export default function RootLayout({
 					<div className="max-w-[960px] mx-auto text-left min-h-screen pb-[100px]">
 						<Header />
 						<TopNav />
-						<main className="flex flex-col px-4 m:p-0 z-0">
-							{children}
-						</main>
+						{children}
 					</div>
 					<Footer />
-					<CardOverlay />
 				</body>
 			</html>
 		</CardContextProvider>

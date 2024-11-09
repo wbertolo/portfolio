@@ -4,24 +4,16 @@ import { useState } from 'react';
 import { useEffect } from "react";
 import CatSelector from './CatSelector';
 import { Card as CardDef } from '../lib/definitions';
-import { useCardContext } from '../context/CardContext';
 
 export default function Cards({ cards }: { cards:Array<CardDef> }) {
 	const cardCollection = cards;
 	const [filteredCardCollection, setFilteredCardCollection] = useState(cards);
 	const [category, setCategory] = useState('All');
-	// const { selectedCard, setSelectedCard } = useCardContext();
-	// const { modalStatus, setModalStatus } = useCardContext();
-
-	// const handleSelectedCard = (id:number) => {
-	// 	const targetCard = cardCollection.filter(card => card.id === id)[0];
-	// 	setSelectedCard(targetCard);
-
-	// }
 
 	useEffect(() => {
-		const filteredCards:object[] = [];
+		// const filteredCards:object[] = [];
 		if (category != 'All') {
+			const filteredCards = [];
 			cardCollection.map((card:any) => {
 				if (card.category === category) {
 					filteredCards.push(card);

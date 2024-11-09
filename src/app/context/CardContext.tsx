@@ -42,4 +42,4 @@ const useCardContext = (): CardContext => {
 	return context;
 };
 
-export { CardContextProvider, useCardContext };
+export { useCardContext, CardContextProvider };
