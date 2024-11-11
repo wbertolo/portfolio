@@ -1,7 +1,7 @@
 'use client';
 
 import Cards from '@/app/ui/Cards';
-import { useCardContext } from './context/CardContext';
+import { useCardContext } from '@/app/context/CardContext';
 
 export default function Home() {
 
