@@ -2,8 +2,8 @@
 import Card from '@/app/ui/Card';
 import { useState } from 'react';
 import { useEffect } from "react";
-import CatSelector from './CatSelector';
-import { Card as CardDef } from '../lib/definitions';
+import CatSelector from '@/app/ui/CatSelector';
+import { Card as CardDef } from '@/app/lib/definitions';
 
 export default function Cards({ cards }: { cards:Array<CardDef> }) {
 	const cardCollection = cards;
