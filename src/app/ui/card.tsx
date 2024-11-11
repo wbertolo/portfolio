@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 export default function Card(params:any) {
-
+	console.log(params.imgSrc);
 	// const { cards } = useCardContext();
 	const [openState, setOpenState] = useState(false);
 
