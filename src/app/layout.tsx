@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
-import Header from "./ui/Header";
-import TopNav from "./ui/TopNav";
-import Footer from "./ui/Footer";
-// import CardOverlay from '@/app/ui/CardOverlay';
+import "@/app/globals.css";
+import Header from "@/app/ui/Header";
+import TopNav from "@/app/ui/TopNav";
+import Footer from "@/app/ui/Footer";
 import { CardContextProvider } from "@/app/context/CardContext";
 
 const geistSans = localFont({

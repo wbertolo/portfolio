@@ -1,5 +1,5 @@
 'use client';
-import Card from './Card';
+import Card from '@/app/ui/Card';
 import { useState } from 'react';
 import { useEffect } from "react";
 import CatSelector from './CatSelector';
