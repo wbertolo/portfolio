@@ -18,7 +18,7 @@ export const cardsData = [
 	{
 		id: 3,
 		name: "Corus",
-		description: "Corus' corporate website.",
+		description: "Corus Entertainment's corporate website.",
 		category: "Media",
 		image: "corus.jpg",
 		url: "https://corusent.com/",
@@ -66,7 +66,7 @@ export const cardsData = [
 	{
 		id: 9,
 		name: "YTV",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.",
+		description: "The YTV website focuses on children’s entertainment. The homepage highlights current shows, new videos, and games. It also promotes a streaming option through STACKTV for on-demand access to YTV content. Visitors can explore the TV schedule, enter contests, and access bonus content for shows. The site is colorful and interactive, designed to engage younger audiences and their families.",
 		category: "Media",
 		image: "ytv.jpg",
 		url: "https://www.ytv.com/",
@@ -74,7 +74,7 @@ export const cardsData = [
 	{
 		id: 10,
 		name: "Slice",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.",
+		description: "The Slice Canada website focuses on entertainment content, featuring popular lifestyle and reality shows. It offers access to episodes, streaming options, and related content, along with a TV schedule and interactive features.",
 		category: "Media",
 		image: "slice.jpg",
 		url: "https://www.slice.ca/",
@@ -82,7 +82,7 @@ export const cardsData = [
 	{
 		id: 11,
 		name: "W Network",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.",
+		description: "The W Network website features a variety of premium drama series and content from Hallmark Channel, focusing on exceptional storytelling and compelling characters. It promotes new movies and shows, with a strong emphasis on holiday and special programming. Visitors can stream content via STACKTV, access show schedules, and sign up for newsletters. The site is visually engaging with rotating banners for featured content and is designed for an audience interested in drama, movies, and lifestyle programming.",
 		category: "Media",
 		image: "w.jpg",
 		url: "https://www.wnetwork.com/",
@@ -90,7 +90,7 @@ export const cardsData = [
 	{
 		id: 12,
 		name: "Tempo",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.",
+		description: "Tempo is a full-service marketing and creative team that is part of Corus Entertainment. Tempo's main focus is on creating custom integrated marketing solutions for brands. They emphasize insights-driven strategies, working closely with agencies and advertising partners to build branded content, sponsorships, talent endorsements, and integrations into Corus’ programming slate.",
 		category: "Media",
 		image: "tempo.jpg",
 		url: "https://tempo.corusent.com/",
@@ -98,7 +98,7 @@ export const cardsData = [
 	{
 		id: 13,
 		name: "Ecobee",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.",
+		description: "Ecobee showcases a range of smart home products, with a focus on energy-efficient and connected thermostat solutions.",
 		category: "Electronics",
 		image: "ecobee.jpg",
 		url: "https://www.ecobee.com/en-ca/",

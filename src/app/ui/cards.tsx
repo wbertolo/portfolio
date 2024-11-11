@@ -11,9 +11,8 @@ export default function Cards({ cards }: { cards:Array<CardDef> }) {
 	const [category, setCategory] = useState('All');
 
 	useEffect(() => {
-		// const filteredCards:object[] = [];
+		const filteredCards: CardDef[] = [];
 		if (category != 'All') {
-			const filteredCards = [];
 			cardCollection.map((card:any) => {
 				if (card.category === category) {
 					filteredCards.push(card);
@@ -28,7 +27,7 @@ export default function Cards({ cards }: { cards:Array<CardDef> }) {
 	return (
 		<div>
 			<CatSelector setCategory={setCategory} />
-			<div className="cards flex row flex-wrap items-start">
+			<div className="cards flex row flex-wrap items-start transition-all duration-1000 ease">
 				{filteredCardCollection.map((card:any) => (
 						<Card
 							key={card.id}
@@ -37,9 +36,7 @@ export default function Cards({ cards }: { cards:Array<CardDef> }) {
 							description={card.description}
 							category={card.category}
 							imgSrc={`/images/${card.image}`}
-							href={card.url}
-							// handleSelectedCard={handleSelectedCard}
-							// setModalStatus={setModalStatus}
+							url={card.url}
 						/>		
 				))}
 			</div>
