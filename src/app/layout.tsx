@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "./ui/header";
-import TopNav from "./ui/topnav";
-import Footer from "./ui/footer";
+import Header from "./ui/Header";
+import TopNav from "./ui/TopNav";
+import Footer from "./ui/Footer";
+// import CardOverlay from '@/app/ui/CardOverlay';
+import { CardContextProvider } from "@/app/context/CardContext";
 
 const geistSans = localFont({
 	src: "./fonts/GeistVF.woff",
@@ -26,18 +28,19 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
+	
 	return (
-		<html lang="en">
-			<body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-300 transition-all duration-100`} >
-				<div className="max-w-[960px] mx-auto text-left min-h-screen pb-[100px]">
-					<Header />
-					<TopNav />
-					<main className="flex flex-col px-4 m:p-0">
+		<CardContextProvider>
+			<html lang="en">
+				<body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-300 transition-all duration-100`} >
+					<div className="max-w-[960px] mx-auto text-left min-h-screen pb-[100px]">
+						<Header />
+						<TopNav />
 						{children}
-					</main>
-				</div>
-				<Footer />
-			</body>
-		</html>
+					</div>
+					<Footer />
+				</body>
+			</html>
+		</CardContextProvider>
 	);
 }
