@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import { useState } from 'react';
-import { useCardContext } from '../context/CardContext';
 
 export default function Card(params:any) {
 
@@ -8,20 +7,61 @@ export default function Card(params:any) {
 	const [openState, setOpenState] = useState(false);
 
 	const handleClick = () => {
-		const cards = document.querySelectorAll('.card');
-
-		cards.forEach((card) => {
-			card.classList.remove('open');
-			card.classList.add('closed');
-		});
 
 		setOpenState(!openState);
 
-		document.getElementById(`card-${params.id}`)?.classList.add('open')
-		document.getElementById(`card-${params.id}`)?.scrollIntoView(
-			{ 
-				block:"center"
-			}
+
+		setTimeout(
+			function() {
+
+				if (!openState) {
+
+					document.querySelector(`#card-${params.id}`)?.classList.remove('closed');
+					document.querySelector(`#card-${params.id}`)?.classList.add('open');
+
+					setTimeout(
+						function() {
+							if (!openState) {
+
+								document.getElementById(`card-${params.id}`)?.scrollIntoView(
+									{ 
+										block:"center",
+										inline: "center",
+										behavior: "smooth"
+									}
+								);
+
+								setTimeout(
+									function() {
+										document.querySelector(`#card-${params.id} .description`)?.classList.remove('desc-closed');
+										document.querySelector(`#card-${params.id} .description`)?.classList.add('desc-open');
+									},
+									500
+								);
+
+							}
+						}, 
+						500
+					);
+
+
+				} else {
+					document.querySelector(`#card-${params.id} .description`)?.classList.remove('desc-open');
+					document.querySelector(`#card-${params.id} .description`)?.classList.add('desc-closed');
+
+					setTimeout(
+						function() {
+							document.querySelector(`#card-${params.id}`)?.classList.remove('open');
+							document.querySelector(`#card-${params.id}`)?.classList.add('closed');
+						}, 
+						500
+					);
+
+				}
+
+
+			}, 
+			300
 		);
 	}
 
@@ -32,26 +72,34 @@ export default function Card(params:any) {
 					transition: flex-basis 0.75s ease;
 				}
 				.open {
+
 					flex-basis: 64%;
 
 					.description {
-						display: block;
+						transition: all 0.3s ease;
 					}
 				}
 
 				.closed {
 					flex-basis: 31%;
+				}
 
-					.description {
-						display: none;
-					}
+				.desc-closed {
+					max-height: 0;
+				}
+
+				.desc-open {
+					max-height: 500px;
 				}
 			`}</style>
 			<div 
 				id={`card-${params.id}`}
-				className={`card ${openState ? 'open' : 'closed'} text-white inline-block mb-[20px] mx-2 min-h-[184px] 
+				className={`card closed text-white inline-block mb-[20px] mx-2 min-h-[184px] 
 				flex flex-col justify-between p-4 bg-slate-800 border border-slate-900 h-full opacity-90 hover:opacity-100
-				transition-shadow duration-500 hover:shadow-2xl hover:shadow-purple-500`}
+				transition-shadow duration-1000 hover:shadow-2xl hover:shadow-purple-500`}
+				// className={`card ${openState ? 'open' : 'closed'} text-white inline-block mb-[20px] mx-2 min-h-[184px] 
+				// flex flex-col justify-between p-4 bg-slate-800 border border-slate-900 h-full opacity-90 hover:opacity-100
+				// transition-shadow duration-1000 hover:shadow-2xl hover:shadow-purple-500`}
 				onClick={handleClick}
 			>
 				<Image
@@ -63,7 +111,7 @@ export default function Card(params:any) {
 				/>
 				<div>
 					<h2 className="mt-0 mb-3 text-white">{params.name}</h2>
-					<div className="description mb-4">{params.description}</div>
+					<div id="description" className="description desc-closed mb-4 transition-all ease duration-200 overflow-hidden">{params.description}</div>
 					<div className="mb-4">Category: {params.category}</div>
 					<div 
 						className={`inline-block py-3 px-4 uppercase font-bold border bg-slate-900 

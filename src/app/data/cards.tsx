@@ -2,7 +2,7 @@ export const cardsData = [
 	{
 		id: 1,
 		name: "Follow This Light",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.",
+		description: "My musician website. Built with WordPress and custom PHP functionalities like forms, email sending and Spotify API integration.",
 		category: "Music",
 		image: "followthislight.jpg",
 		url: "https://followthislight.com/",
@@ -10,7 +10,7 @@ export const cardsData = [
 	{
 		id: 2,
 		name: "Freshbooks",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.",
+		description: "Marketing website for the SaaS online accounting platform.",
 		category: "SaaS",
 		image: "freshbooks.jpg",
 		url: "https://www.freshbooks.com/",
@@ -18,7 +18,7 @@ export const cardsData = [
 	{
 		id: 3,
 		name: "Corus",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.",
+		description: "Corus' corporate website.",
 		category: "Media",
 		image: "corus.jpg",
 		url: "https://corusent.com/",
@@ -26,7 +26,7 @@ export const cardsData = [
 	{
 		id: 4,
 		name: "Food Network Canada",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.",
+		description: "The Food Network Canada website offers a rich variety of recipes, cooking tips, and articles on food trends and kitchen tips. It highlights popular TV shows, features seasonal recipes, and has categories for different types of cuisine and dietary needs. Users can explore chef profiles, watch episodes online, and find quick and easy meal ideas alongside more complex dishes. It also provides streaming options and kitchen tools advice.",
 		category: "Media",
 		image: "foodnetwork.jpg",
 		url: "https://www.foodnetwork.ca/",
@@ -34,7 +34,7 @@ export const cardsData = [
 	{
 		id: 5,
 		name: "HGTV Canada",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.",
+		description: "The HGTV Canada website focuses on home design, renovation, and real estate content. It features popular HGTV shows, expert advice on home improvements, design inspiration, and DIY projects. Visitors can explore room-specific tips, trends in home decor, and insights into real estate market dynamics. The site also allows users to watch episodes and follow their favorite HGTV personalities.",
 		category: "Media",
 		image: "hgtv.jpg",
 		url: "https://www.hgtv.ca/",
@@ -42,7 +42,7 @@ export const cardsData = [
 	{
 		id: 6,
 		name: "Disney Channel Canada",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.",
+		description: "The Disney Channel Canada website features content related to its popular TV shows, movies, and characters, primarily aimed at kids and families. It provides show episodes, trailers, and interactive content such as games and quizzes. The site includes sections for new arrivals, featured programs, and seasonal content. Visitors can explore programming schedules, character profiles, and videos of beloved Disney Channel stars.",
 		category: "Media",
 		image: "disney.jpg",
 		url: "https://www.disneychannel.ca/",
@@ -50,7 +50,7 @@ export const cardsData = [
 	{
 		id: 7,
 		name: "History Channel Canada",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.",
+		description: "The History Channel Canada site features a clean, content-focused layout centered around its TV programming. The homepage showcases upcoming shows and new seasons. There are also sections for streaming options, newsletters, and social media links. It emphasizes viewer engagement with streaming offers on platforms like STACKTV and provides a straightforward navigation menu for exploring shows, schedules, and more. The design is modern and aligned with the network's historical content theme",
 		category: "Media",
 		image: "history.jpg",
 		url: "https://www.history.ca/",
@@ -58,7 +58,7 @@ export const cardsData = [
 	{
 		id: 8,
 		name: "Showcase",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.",
+		description: "The Showcase website offers a diverse range of premium television content, including popular series and blockbuster movies. Users can explore various shows and movies, access the TV schedule, and find information on where to watch. The site also provides links to Showcase's social media channels, including X (formerly Twitter), Facebook, Instagram, and YouTube, facilitating engagement with the audience.",
 		category: "Media",
 		image: "showcase.jpg",
 		url: "https://www.showcase.ca/",
