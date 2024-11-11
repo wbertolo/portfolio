@@ -3,8 +3,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 export default function Card(params:any) {
-	console.log(params.imgSrc);
-	// const { cards } = useCardContext();
+
 	const [openState, setOpenState] = useState(false);
 
 	const handleClick = () => {
@@ -74,7 +73,12 @@ export default function Card(params:any) {
 				}
 				.open {
 
-					flex-basis: 64%;
+					flex-basis: 100%;
+
+					@media only screen and (min-width: 768px) {
+						flex-basis: 64%;
+					}
+				
 
 					.description {
 						transition: all 0.3s ease;
@@ -82,7 +86,11 @@ export default function Card(params:any) {
 				}
 
 				.closed {
-					flex-basis: 31%;
+					flex-basis: 100%;
+
+					@media only screen and (min-width: 768px) {
+						flex-basis: 31%;
+					}
 				}
 
 				.desc-closed {
