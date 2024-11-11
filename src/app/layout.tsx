@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "./ui/Header";
 import TopNav from "./ui/TopNav";
 import Footer from "./ui/Footer";
-import CardOverlay from '@/app/ui/CardOverlay';
+// import CardOverlay from '@/app/ui/CardOverlay';
 import { CardContextProvider } from "@/app/context/CardContext";
 
 const geistSans = localFont({

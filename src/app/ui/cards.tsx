@@ -28,7 +28,7 @@ export default function Cards({ cards }: { cards:Array<CardDef> }) {
 	return (
 		<div>
 			<CatSelector setCategory={setCategory} />
-			<div className="cards grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr grid-flow-row">
+			<div className="cards flex row flex-wrap items-start">
 				{filteredCardCollection.map((card:any) => (
 						<Card
 							key={card.id}
