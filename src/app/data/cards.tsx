@@ -50,7 +50,7 @@ export const cardsData = [
 	{
 		id: 7,
 		name: "History Channel Canada",
-		description: "The History Channel Canada site features a clean, content-focused layout centered around its TV programming. The homepage showcases upcoming shows and new seasons. There are also sections for streaming options, newsletters, and social media links. It emphasizes viewer engagement with streaming offers on platforms like STACKTV and provides a straightforward navigation menu for exploring shows, schedules, and more. The design is modern and aligned with the network's historical content theme",
+		description: "The History Channel Canada site features a clean, content-focused layout centered around its TV programming. The homepage showcases upcoming shows and new seasons. There are also sections for streaming options, newsletters, and social media links. It emphasizes viewer engagement with streaming offers on platforms like STACKTV and provides a straightforward navigation menu for exploring shows, schedules, and more.",
 		category: "Media",
 		image: "history.jpg",
 		url: "https://www.history.ca/",

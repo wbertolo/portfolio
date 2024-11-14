@@ -15,7 +15,7 @@ export default function Card(params:any) {
 			<div 
 				id={`card-${params.id}`}
 				className={`card cursor-pointer text-white inline-block mb-[20px] mx-2 min-h-[184px] 
-				flex flex-col justify-between basis-full md:basis-[31%] p-4 bg-slate-800 border border-slate-900 h-full 
+				flex flex-col justify-between basis-full md:basis-[47%] lg:basis-[31%] p-4 bg-slate-800 border border-slate-900 h-full 
 				opacity-90 hover:opacity-100 transition-all duration-75 ease hover:shadow-2xl hover:shadow-purple-500`}
 				onClick={handleClick}
 			>
@@ -25,11 +25,11 @@ export default function Card(params:any) {
 					width={294}
 					height={165}
 					alt={`${params.name} website image`}
-					className="mb-5"
+					className="mb-5 w-full md:w-auto"
 				/>
 				<div>
 					<h2 className="mt-0 mb-3 text-white">{params.name}</h2>
-					<div id="description" className={`description ${openState ? 'max-h-[500px]' : 'max-h-0'} mb-4 transition-all ease duration-200 overflow-hidden`}>
+					<div id="description" className={`description ${openState ? 'max-h-[1000px]' : 'max-h-0'} mb-4 transition-all ease duration-200 overflow-hidden`}>
 						<p>{params.description}</p>
 
 						<Link 
